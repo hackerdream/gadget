@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>手风琴导航栏</title>
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+	<meta name="Keywords" content="关键词，关键词"/>
+	<meta name="description" content="内容">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		ul li{list-style: none;}
+		.clearfix:after{content: '';display: block;clear: both;}
+		.accordionNav{background: #E5E5E5;position: absolute;top: 50%;left: 50%;transform: translate(-300px,-300px);width: 600px;height: 500px;}
+		.accordion{width: 400px;height: 500px;margin:40px auto;}
+		.accordion li input{position: absolute;opacity: 0;}
+		.accordion li{ position: relative;width: 360px;padding: 0 20px; background: #fff;border-bottom: 1px solid #ccc;box-shadow: 0 2px 3px #ccc;}
+		.accordion li label{display: inline-block;width: 360px;height: 50px;padding: 0 20px;line-height: 50px;}
+		.accordion li label:after{position: absolute;top: 20px;right: 30px;content:'';width: 10px;height: 10px;border:2px solid #ccc;border-left: 0;border-bottom:0;transform:rotate(45deg);transition: .4s;}
+		.accordion li section{display: block;width: 360px;height: 0;overflow: hidden;font-size:12px;text-indent: 2em;transition: .4s all;}
+		.accordion li section p{line-height: 24px;}
+		.accordion li section p + p{margin-top: 10px;}
+		.accordion li input[type="radio"]:checked + label:after{transform: rotate(135deg);}
+		.accordion li input[type="radio"]:checked ~ section{height: 210px;}
+	</style>
+</head>
+<body>
+
+	<div class="accordionNav">
+		<ul class="accordion clearfix">
+			<li>
+				<input type="radio" name="nav" id="nav-1">
+				<label for="nav-1">Pure css Accordion</label>
+				<section>
+					<p>
+						Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+					</p>
+					<p>
+						Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+					</p>
+				</section>
+			</li>
+			<li>
+				<input type="radio" name="nav" id="nav-2">
+				<label for="nav-2">Pure css Accordion</label>
+				<section>
+					<p>
+						Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+					</p>
+					<p>
+						Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+					</p>
+				</section>
+			</li>
+			<li>
+				<input type="radio" name="nav" id="nav-3">
+				<label for="nav-3">Pure css Accordion</label>
+				<section>
+					<p>
+						Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+					</p>
+					<p>
+						Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+					</p>
+				</section>
+			</li>
+			<li>
+				<input type="radio" name="nav" id="nav-4">
+				<label for="nav-4">Pure css Accordion</label>
+				<section>
+					<p>
+						Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+					</p>
+					<p>
+						Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+					</p>
+				</section>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
